@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.logicbig.example&apos; to &apos;com.sreenutech.custom&apos;&#x0D;&#x0A;- Original project: &apos;yaml-entity-provider&apos;&#x0D;&#x0A;- Original element: &apos;yaml-entity-provider/src/main/java/com.logicbig.example&apos;&#x0D;&#x0A;- Renamed element: &apos;yaml-entity-provider/src/main/java/com.sreenutech.custom&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.logicbig.example&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.logicbig.example" name="com.sreenutech.custom" qualified="false" references="true" stamp="1526345075949" textual="false" version="1.0"/>
+</session>

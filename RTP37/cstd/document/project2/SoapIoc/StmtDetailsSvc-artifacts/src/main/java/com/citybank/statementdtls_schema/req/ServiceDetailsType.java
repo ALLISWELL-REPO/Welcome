@@ -1,0 +1,118 @@
+
+package com.citybank.statementdtls_schema.req;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for ServiceDetailsType complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="ServiceDetailsType">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="servicename" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="api" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="version" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "ServiceDetailsType", propOrder = {
+    "servicename",
+    "api",
+    "version"
+})
+public class ServiceDetailsType {
+
+    @XmlElement(required = true)
+    protected String servicename;
+    @XmlElement(required = true)
+    protected String api;
+    @XmlElement(required = true)
+    protected String version;
+
+    /**
+     * Gets the value of the servicename property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getServicename() {
+        return servicename;
+    }
+
+    /**
+     * Sets the value of the servicename property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setServicename(String value) {
+        this.servicename = value;
+    }
+
+    /**
+     * Gets the value of the api property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApi() {
+        return api;
+    }
+
+    /**
+     * Sets the value of the api property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApi(String value) {
+        this.api = value;
+    }
+
+    /**
+     * Gets the value of the version property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getVersion() {
+        return version;
+    }
+
+    /**
+     * Sets the value of the version property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setVersion(String value) {
+        this.version = value;
+    }
+
+}

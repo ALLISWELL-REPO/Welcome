@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+xmlns:tns="http://www.citybank.com/StatementDtls/service" 
+xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="StatementDetailsService" 
+targetNamespace="http://www.citybank.com/StatementDtls/service"
+xmlns:req="http://www.citybank.com/StatementDtls/Schema/Req"
+xmlns:res="http://www.citybank.com/StatementDtls/Schema/Res">
+
+  <wsdl:types>
+  
+    <xsd:schema targetNamespace="http://www.example.org/StatementDetailsService/">
+    
+      <xsd:import namespace="http://www.citybank.com/StatementDtls/Schema/Req" schemaLocation="StatementDtlsReq.xsd"/>
+      <xsd:import namespace="http://www.citybank.com/StatementDtls/Schema/Res" schemaLocation="StatementDtlsRes.xsd"/>
+      
+            
+    </xsd:schema>
+    
+  </wsdl:types>
+  
+  <wsdl:message name="getTransactionRequest">
+    <wsdl:part element="req:StatementDtlsReq" name="parameters"/>
+  </wsdl:message>
+  
+  <wsdl:message name="getTransactionResponse">
+    <wsdl:part element="res:StatementDtlsResp" name="parameters"/>
+  </wsdl:message>
+  
+  <wsdl:portType name="StatementDetailsService">
+    <wsdl:operation name="getTransactions">
+      <wsdl:input message="tns:getTransactionRequest"/>
+      <wsdl:output message="tns:getTransactionResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  
+  <wsdl:binding name="StatementDetailsServiceSOAP" type="tns:StatementDetailsService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getTransactions">
+      <soap:operation soapAction="http://www.example.org/StatementDetailsService/NewOperation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  
+  <wsdl:service name="StatementTransDetails">
+    <wsdl:port binding="tns:StatementDetailsServiceSOAP" name="StatementDetailsSOAP">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+  
+</wsdl:definitions>

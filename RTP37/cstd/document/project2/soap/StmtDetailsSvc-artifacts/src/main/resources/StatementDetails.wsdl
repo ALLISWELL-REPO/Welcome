@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://www.citybank.com/StatementDetails/Service"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:req="http://www.citybank.com/StatementDtls|Schema/Req" xmlns:res="http://www.citybank.com/StatementDtls|Schema/Resp"
+	name="StatementDetails" targetNamespace="http://www.citybank.com/StatementDetails/Service">
+
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://www.citybank.com/StatementDtls|beans">
+			<xsd:import namespace="http://www.citybank.com/StatementDtls|Schema/Req"
+				schemaLocation="StatementDtlsReq.xsd"></xsd:import>
+			<xsd:import namespace="http://www.citybank.com/StatementDtls|Schema/Resp"
+				schemaLocation="StatementDtlsRes.xsd"></xsd:import>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getTrasactions_Request">
+		<wsdl:part element="req:StatementDtlsReq" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="getTrasactions_Response">
+		<wsdl:part element="res:StatementDtlsRes" name="parameters" />
+	</wsdl:message>
+
+	<wsdl:portType name="StatementDetails">
+		<wsdl:operation name="getTrasactions">
+			<wsdl:input message="tns:getTrasactions_Request" />
+			<wsdl:output message="tns:getTrasactions_Response" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="StatementDetailsSOAP" type="tns:StatementDetails">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getTrasactions">
+			<soap:operation
+				soapAction="http://www.citybank.com/StatementDetails/Service/NewOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="StatementDetailsService">
+		<wsdl:port binding="tns:StatementDetailsSOAP" name="StatementDetailsSOAP">
+			<soap:address location="http://www.example.org/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

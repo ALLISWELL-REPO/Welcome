@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.citybank.com/StatementDtls|Schema/Resp"
+	xmlns:resp="http://www.citybank.com/StatementDtls|Schema/Resp"
+	elementFormDefault="qualified">
+
+
+	<element name="StatementDtlsRes" type="resp:StatementDtlsResType" />
+
+
+	<complexType name="StatementDtlsResType">
+		<sequence>
+			<element name="StatusBlock" type="resp:StatusBlockType" />
+			<element name="TransDetails" type="resp:TransDetailsType" />
+		</sequence>
+	</complexType>
+
+
+	<complexType name="StatusBlockType">
+		<sequence>
+			<element name="errorCode" type="string" />
+			<element name="errorMsg" type="string" />
+			<element name="respCode" type="string" />
+			<element name="respMsg" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="TransDetailsType">
+		<sequence>
+			<element name="Trasaction" type="resp:TrasactionType" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+	<complexType name="TrasactionType">
+		<sequence>
+			<element name="id" type="string" />
+			<element name="name" type="string" />
+			<element name="desc" type="string" />
+			<element name="MarchatName" type="string" />
+			<element name="amout" type="string" />
+			<element name="status" type="string" />
+			<element name="remark" type="string" />
+		</sequence>
+	</complexType>
+</schema>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.citybank.com/StatementDtls/Schema/Req"
+	xmlns:req="http://www.citybank.com/StatementDtls/Schema/Req"
+	elementFormDefault="qualified">
+
+
+	<element name="StatementDtlsReq" type="req:StatementDtlsReqType" />
+
+	<complexType name="StatementDtlsReqType">
+
+		<sequence>
+
+			<element name="ClientDetails" type="req:ClientDetailsType" />
+
+			<element name="CustomerDetails" type="req:CustomerDetailsType" />
+
+			<element name="TransCategory" type="req:TransCategoryType" />
+
+			<element name="ServiceDetails" type="req:ServiceDetailsType" />
+
+		</sequence>
+
+
+	</complexType>
+
+
+
+
+	<complexType name="ClientDetailsType">
+
+		<sequence>
+
+			<element name="clientid" type="string" />
+			<element name="channelid" type="string" />
+			<element name="reqid" type="string" />
+
+
+
+		</sequence>
+
+
+	</complexType>
+
+
+	<complexType name="CustomerDetailsType">
+
+		<sequence>
+
+			<element name="cardnum" type="string" />
+			<element name="cvvnum" type="string" />
+			<element name="expdate" type="string" />
+			<element name="nameoncard" type="string" />
+
+
+		</sequence>
+
+
+	</complexType>
+
+
+	<complexType name="TransCategoryType">
+
+		<sequence>
+
+			<element name="DateRange" type="req:DateRangeType" />
+			<element name="typeOfCategory" type="string" />
+
+
+		</sequence>
+
+	</complexType>
+
+
+	<complexType name="DateRangeType">
+
+		<sequence>
+
+			<element name="startdate" type="date" />
+			<element name="enddate" type="date" />
+
+		</sequence>
+
+	</complexType>
+
+
+	<complexType name="ServiceDetailsType">
+
+		<sequence>
+
+			<element name="Servicename" type="string" />
+			<element name="api" type="string" />
+			<element name="version" type="string" />
+
+
+		</sequence>
+
+
+	</complexType>
+
+
+</schema>

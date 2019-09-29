@@ -1,0 +1,10 @@
+com\citybank\statementdtls\dao\impl\StatementInfoConfig.class
+com\citybank\statementdtls\dao\beans\TransactionsDAO.class
+com\citybank\statementdtls\dao\beans\StatementDtlsDAOReq.class
+com\citybank\statementdtls\dao\util\SystemException.class
+com\citybank\statementdtls\dao\StatementDtlsDAO.class
+com\citybank\statementdtls\dao\util\BusinessException.class
+com\citybank\statementdtls\dao\util\StatementDtlsDAOConstant.class
+com\citybank\statementdtls\dao\beans\StatementDtlsDAORes.class
+com\citybank\statementdtls\dao\impl\StatementDtlsSpringImpl.class
+com\citybank\statementdtls\dao\util\StatementDtlsDAOUtil.class

@@ -1,0 +1,21 @@
+{
+  "clientDetails" : {
+    "clientid" : "1245",
+    "channelid" : "web",
+    "reqid" : "7800"
+  },
+  "customerDetails" : {
+    "cardnum" : "174785785757",
+    "cvvnum" : "123",
+    "expdate" : "16-09-2018",
+    "nameoncard" : "Adil"
+  },
+  "transCategory" : {
+    "dataRange" : {
+      "startdate" : null,
+      "enddate" : null
+    },
+    "typeofcategory" : "All"
+  },
+  "serviceDetails" : null
+}

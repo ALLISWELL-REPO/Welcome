@@ -1,0 +1,11 @@
+127.0.0.1 - - [15/May/2018:06:10:37 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [15/May/2018:06:10:39 +0530] "GET /yaml-entity-provider/ HTTP/1.1" 404 1010
+0:0:0:0:0:0:0:1 - - [15/May/2018:06:11:31 +0530] "GET /yaml-entity-provider/employees HTTP/1.1" 200 3
+0:0:0:0:0:0:0:1 - - [15/May/2018:06:12:20 +0530] "GET /yaml-entity-provider/employees/123 HTTP/1.1" 405 1056
+127.0.0.1 - - [15/May/2018:06:18:11 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [15/May/2018:06:18:12 +0530] "GET /JerseyFilterLogging/ HTTP/1.1" 500 18
+0:0:0:0:0:0:0:1 - - [15/May/2018:06:18:46 +0530] "GET /JerseyFilterLogging/service HTTP/1.1" 200 50
+0:0:0:0:0:0:0:1 - - [15/May/2018:06:19:23 +0530] "GET /JerseyFilterLogging/service/sreenu HTTP/1.1" 200 28
+127.0.0.1 - - [15/May/2018:06:21:23 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [15/May/2018:06:21:24 +0530] "GET /JerseyFilterLogging/ HTTP/1.1" 500 18
+0:0:0:0:0:0:0:1 - - [15/May/2018:06:21:54 +0530] "GET /JerseyFilterLogging/service HTTP/1.1" 200 50

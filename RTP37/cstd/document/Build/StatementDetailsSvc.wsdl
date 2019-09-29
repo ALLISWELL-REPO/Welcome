@@ -1,0 +1,49 @@
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.citybank.com/StatementDtls/service"
+	targetNamespace="http://www.citybank.com/StatementDtls/service"
+	xmlns:req="http://www.citybank.com/StatementDtls/schema/Req" 
+	xmlns:res="http://www.citybank.com/StatementDtls/schema/Res">
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://www.example.org/StatementDetailsSvc/">
+			<xsd:import namespace="http://www.citybank.com/StatementDtls/schema/Req"
+				schemaLocation="StatementDtlsRequest.xsd"/>
+			<xsd:import namespace="http://www.citybank.com/StatementDtls/schema/Res"
+				schemaLocation="StatementDtlsResponse.xsd"/>
+
+
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getTransactionRequest">
+		<wsdl:part element="req:StatementDtlsReq" name="parameters"/>
+	</wsdl:message>
+	<wsdl:message name="getTransactionResponse">
+		<wsdl:part element="res:StatementDtlsRes" name="parameters"/>
+	</wsdl:message>
+	<wsdl:portType name="StatementDetailsSvc">
+		<wsdl:operation name="getTransactions">
+			<wsdl:input message="tns:getTransactionRequest"/>
+			<wsdl:output message="tns:getTransactionResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="StatementDetailsSvcSOAP" type="tns:StatementDetailsSvc">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getTransactions">
+			<soap:operation soapAction=""/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="StatementTransactionDetails">
+		<wsdl:port name="StatementDetailspost" binding="tns:StatementDetailsSvcSOAP" >
+			<soap:address location="http://www.example.org/"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

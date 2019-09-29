@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.citybank.cards.statement</groupId>
+	<artifactId>stmtdetailssvc-servicelayer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>stmtdetailssvc-servicelayer</name>
+	<description>This is service layer</description>
+	<dependencies>
+		<!-- XSD&WSDL Artifact -->
+		<dependency>
+			<groupId>com.citybank.cards.statement</groupId>
+			<artifactId>stmtdetailssvc-artifacts</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- Process Layer Dependency -->
+		<dependency>
+			<groupId>com.citybank.cards.statement</groupId>
+			<artifactId>stmtdetailssvc-processlayer</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- Dependency for JAXB API -->
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.1.11</version>
+		</dependency>
+		<!-- Dependency for JAXWS Runtime classes -->
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-rt</artifactId>
+			<version>2.2.8</version>
+		</dependency>
+		<!-- JAXWS Annotations : Ex: @WebService,@WebMethod -->
+		<dependency>
+			<groupId>javax.jws</groupId>
+			<artifactId>jsr181-api</artifactId>
+			<version>1.0-MR1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.stream.buffer</groupId>
+			<artifactId>streambuffer</artifactId>
+			<version>1.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>policy</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.gmbal</groupId>
+			<artifactId>gmbal-api-only</artifactId>
+			<version>3.1.0-b001</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.ha</groupId>
+			<artifactId>ha-api</artifactId>
+			<version>3.1.9</version>
+		</dependency>
+		<!-- JUnit Test Case Dependency -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+		</dependency>
+		<!-- PowerMockito Start Dependency -->
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-core</artifactId>
+			<version>1.6.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-module-junit4</artifactId>
+			<version>1.6.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.powermock</groupId>
+			<artifactId>powermock-api-mockito</artifactId>
+			<version>1.6.3</version>
+		</dependency>
+		<!-- PowerMockito End Dependency -->
+	</dependencies>
+</project>

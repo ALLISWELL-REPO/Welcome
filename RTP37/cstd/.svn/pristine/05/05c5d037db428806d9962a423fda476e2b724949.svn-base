@@ -1,0 +1,7 @@
+com\citybank\statementdtls\service\builder\StatementDtlsSvcReqBuilder.class
+com\citybank\statementdtls\service\util\StatementDtlsSvcConstant.class
+com\citybank\statementdtls\service\util\StatementReqInvalidException.class
+com\citybank\statementdtls\service\validator\StatementDtlsSvcReqValidator.class
+com\citybank\statementdtls\service\impl\StatementDetailsSvcImpl.class
+com\citybank\statementdtls\service\builder\StatementDtlsSvcRespBuilder.class
+com\citybank\statementdtls\service\util\StatementDtlsSvcUtil.class

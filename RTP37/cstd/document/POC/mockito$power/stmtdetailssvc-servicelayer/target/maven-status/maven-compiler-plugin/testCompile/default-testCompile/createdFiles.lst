@@ -1,0 +1,4 @@
+com\citybank\statementdtls\service\builder\StatementDtlsSvcRespBuilderTest.class
+com\citybank\statementdtls\service\util\StatementDtlsServiceUtilityTest.class
+com\citybank\statementdtls\service\builder\StatementDtlsSvcReqBuilderTest.class
+com\citybank\statementdtls\service\validator\StatementDtlsSvcReqValidatorTest.class

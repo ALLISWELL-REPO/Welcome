@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<statementDtlsReqType xmlns="http://www.citybank.com/StatementDtls|Schema/Req">
+	<ClientDetails>
+		<ClientId>web</ClientId>
+		<ChannelId>online</ChannelId>
+		<reqId>514324</reqId>
+	</ClientDetails>
+	<CustomerDetails>
+		<cardnum>4590050000032147</cardnum>
+		<cvvnum>514</cvvnum>
+		<expdate>2018-04-03</expdate>
+		<nameoncard>sunny</nameoncard>
+	</CustomerDetails>
+	<TransCategory>
+		<DateRange>
+			<startDate>2018-06-12+05:30</startDate>
+			<endDate>2018-07-12+05:30</endDate>
+		</DateRange>
+		<typeOfCategory>full</typeOfCategory>
+	</TransCategory>
+</statementDtlsReqType>

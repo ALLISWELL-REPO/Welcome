@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="yaml-entity-provider">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <property name="context-root" value="yaml-entity-provider"/>
+        <property name="java-output-path" value="/yaml-entity-provider/target/classes"/>
+    </wb-module>
+</project-modules>

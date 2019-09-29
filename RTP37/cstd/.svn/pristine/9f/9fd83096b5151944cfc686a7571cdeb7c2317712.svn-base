@@ -1,0 +1,8 @@
+com\alam\artifact\orderres\package-info.class
+com\alam\artifact\orderreq\ObjectFactory.class
+com\alam\artifact\orderres\ObjectFactory.class
+com\alam\artifact\orderres\OrderRestype.class
+com\alam\artifact\orderreq\OrderReqtype.class
+com\alam\order\OrderService.class
+com\alam\order\JaxBMarshel.class
+com\alam\artifact\orderreq\package-info.class

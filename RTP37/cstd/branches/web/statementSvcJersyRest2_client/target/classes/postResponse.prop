@@ -1,0 +1,10 @@
+StatementDtlsResType obj: {
+  "clientDetails" : {
+    "clientid" : "1245",
+    "channelid" : "web",
+    "reqid" : "f9cf70c0-4aa1-4614-b062-a6b888dc7d6f"
+  },
+  "transCategory" : null,
+  "customerDetails" : null,
+  "serviceDetails" : null
+}

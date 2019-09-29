@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title> Login Page </title>
+		<link rel = "stylesheet" type="text/css" href="login_page.css"/>	
+	</head>
+	
+	<body class = "login_body">
+	<marquee  direction="left" scrollamount="3" behavior="alternate">
+		<h2 class="welcome_text" >Welcome to Sainsbury Bank</h2></marquee>
+		<hr>
+		<center>
+			<form class = "form" action = "home.html" >
+				<table border="0" class="Font_Element">
+					<tr >
+						<td>Enter Username : <input type = "text" name = "txtUserName" id="txtUserName"
+									class="textbox" required> </td>
+					</tr>
+					
+					<tr></tr><tr></tr>
+					
+					<tr>
+						<td>Enter Password : &nbsp;<input type = "password" name = "txtPwd" id="txtPwd"
+									class="textbox" required> </td>
+					</tr>
+				</table>	
+					
+			&emsp;&emsp;&emsp;
+				<input class="submit_button" type="submit" value="Submit">
+				<input class="reset_button" type="reset" value="Reset">
+			</form>
+		</center>	
+	</body>
+</html>

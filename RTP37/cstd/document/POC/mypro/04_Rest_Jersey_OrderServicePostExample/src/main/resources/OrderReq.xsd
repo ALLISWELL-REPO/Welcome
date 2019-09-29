@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.sreenutech.org/OrderReq" 
+xmlns:tns="http://www.sreenutech.org/OrderReq" 
+elementFormDefault="qualified">
+<element name="OrderReq" type="tns:OrderReqtype"/>
+	<complexType name="OrderReqtype">
+		<sequence>
+			<element name="oid" type="string"/>
+			<element name="name" type="string"/>
+		</sequence>
+	</complexType>
+</schema>

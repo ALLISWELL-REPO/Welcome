@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Statement Records</title>
+<script type="text/javascript" src="./js/getTransactions.js"></script>
+<p>My Transaction</p>
+</head>
+<body style="color:maroon;">
+Enter CardNum:<input type="text" name="cardNum" id="cardNum" size="30"/><br/>
+Enter CvvNum:<input type="text" name="cvv" id="cvv" size="30"/><br/>
+Enter NameOnCard:<input type="text" name="nameOnCard" id="nameOnCard" size="30"/><br/>
+<input type="button" value="GetTransactions"  onclick="getTransactionDetails()"/>
+<div id="trans">
+</div>
+</body>
+</html>

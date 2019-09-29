@@ -1,0 +1,119 @@
+wsdl request url  ::http://localhost:8080/stmtdetailsSvc_war/transDetails
+========================
+Request
+================
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://www.citybank.com/StatementDtls/schema/Req">
+
+   <soapenv:Header/>
+   <soapenv:Body>
+      <req:StatementDtlsReq>
+         <req:ClientDetails>
+            <req:clientid>web</req:clientid>
+            <req:channelid>Flipkart</req:channelid>
+            <req:reqid>1234</req:reqid>
+         </req:ClientDetails>
+         <req:CustomerDetails>
+            <req:cardnum>1234567890</req:cardnum>
+            <req:cvvnum>123</req:cvvnum>
+            <req:expdate>05/2020</req:expdate>
+            <req:nameoncard>abcd</req:nameoncard>
+         </req:CustomerDetails>
+         <!--Optional:-->
+         <req:TransCategory>
+            <req:DataRange>
+               <req:startdate>01-04-2018</req:startdate>
+               <req:enddate>15-05-2018</req:enddate>
+            </req:DataRange>
+            <req:typeofcategory>aa</req:typeofcategory>
+         </req:TransCategory>
+         <!--Optional:-->
+         <req:ServiceDetails>
+            <req:servicename>shopping</req:servicename>
+            <req:api>getTransactions</req:api>
+            <req:version>1</req:version>
+         </req:ServiceDetails>
+      </req:StatementDtlsReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+Response
+=========================
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:StatementDtlsRes xmlns="http://www.citybank.com/StatementDtls/schema/Req" xmlns:ns2="http://www.citybank.com/StatementDtls/schema/Res">
+         <ns2:StatusBlock>
+            <ns2:reapcode>0000</ns2:reapcode>
+            <ns2:respmsg>success</ns2:respmsg>
+         </ns2:StatusBlock>
+         <ns2:TransDetails>
+            <ns2:Transaction>
+               <ns2:id>111111</ns2:id>
+               <ns2:date>01-06-2018</ns2:date>
+               <ns2:name>AAA</ns2:name>
+               <ns2:desc>good</ns2:desc>
+               <ns2:merchantname>Hyd central</ns2:merchantname>
+               <ns2:amount>10000</ns2:amount>
+               <ns2:status>success</ns2:status>
+               <ns2:remark>NA</ns2:remark>
+            </ns2:Transaction>
+            <ns2:Transaction>
+               <ns2:id>222222</ns2:id>
+               <ns2:date>01-05-2018</ns2:date>
+               <ns2:desc>good</ns2:desc>
+               <ns2:merchantname>Hyd central1</ns2:merchantname>
+               <ns2:amount>20000</ns2:amount>
+               <ns2:status>success</ns2:status>
+               <ns2:remark>NA</ns2:remark>
+            </ns2:Transaction>
+            <ns2:Transaction>
+               <ns2:id>33333</ns2:id>
+               <ns2:date>01-04-2018</ns2:date>
+               <ns2:desc>good</ns2:desc>
+               <ns2:merchantname>Hyd central2</ns2:merchantname>
+               <ns2:amount>30000</ns2:amount>
+               <ns2:status>success</ns2:status>
+               <ns2:remark>NA</ns2:remark>
+            </ns2:Transaction>
+            <ns2:Transaction>
+               <ns2:id>44444</ns2:id>
+               <ns2:date>01-03-2018</ns2:date>
+               <ns2:desc>good</ns2:desc>
+               <ns2:merchantname>Hyd central3</ns2:merchantname>
+               <ns2:amount>40000</ns2:amount>
+               <ns2:status>success</ns2:status>
+               <ns2:remark>NA</ns2:remark>
+            </ns2:Transaction>
+            <ns2:Transaction>
+               <ns2:id>55555</ns2:id>
+               <ns2:date>01-02-2018</ns2:date>
+               <ns2:desc>good</ns2:desc>
+               <ns2:merchantname>Hyd central4</ns2:merchantname>
+               <ns2:amount>50000</ns2:amount>
+               <ns2:status>success</ns2:status>
+               <ns2:remark>NA</ns2:remark>
+            </ns2:Transaction>
+         </ns2:TransDetails>
+      </ns2:StatementDtlsRes>
+   </S:Body>
+</S:Envelope>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+
+Keystore type: JKS
+Keystore provider: SUN
+
+Your keystore contains 3 entries
+
+Alias name: testca
+Creation date: Jul 13, 2016
+Entry type: trustedCertEntry
+
+Owner: CN=*.sreenutech.com, OU=RTP, O=Sreenu Technologies, L=Hyd, ST=TS, C=IN
+Issuer: CN=*.sreenutech.com, OU=RTP, O=Sreenu Technologies, L=Hyd, ST=TS, C=IN
+Serial number: ed44f99ae551c086
+Valid from: Wed Jul 13 22:03:42 IST 2016 until: Sat Jul 11 22:03:42 IST 2026
+Certificate fingerprints:
+	 MD5:  5E:F9:1C:16:55:F7:8E:0E:80:3A:5C:10:8F:22:C6:E2
+	 SHA1: C4:54:56:89:97:41:7A:13:6D:6D:6B:59:C2:2D:C6:98:06:5F:2E:21
+	 SHA256: 74:BB:73:E4:9D:E0:64:E1:FE:B1:53:24:E2:19:AD:45:4B:1E:DB:51:19:37:E1:02:FE:22:9D:C4:B3:42:CE:14
+	 Signature algorithm name: SHA1withRSA
+	 Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 7A B9 7A 5B A1 BB 54 66   D6 22 13 3C EA 92 6A BE  z.z[..Tf.".<..j.
+0010: 91 88 2F 67                                        ../g
+]
+]
+
+#2: ObjectId: 2.5.29.19 Criticality=true
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+#3: ObjectId: 2.5.29.15 Criticality=true
+KeyUsage [
+  DigitalSignature
+  Key_CertSign
+  Crl_Sign
+]
+
+#4: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 7A B9 7A 5B A1 BB 54 66   D6 22 13 3C EA 92 6A BE  z.z[..Tf.".<..j.
+0010: 91 88 2F 67                                        ../g
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+Alias name: serverkey
+Creation date: Jul 13, 2016
+Entry type: trustedCertEntry
+
+Owner: CN=Sreenu Technologies, OU=RTP, O=Sreenu Technologies, L=Hyd, ST=TS, C=IN
+Issuer: CN=*.sreenutech.com, OU=RTP, O=Sreenu Technologies, L=Hyd, ST=TS, C=IN
+Serial number: 3
+Valid from: Wed Jul 13 22:04:15 IST 2016 until: Sat Jul 11 22:04:15 IST 2026
+Certificate fingerprints:
+	 MD5:  42:7D:0F:83:5C:69:E8:46:02:9C:D2:F1:0E:37:51:56
+	 SHA1: 86:7B:E0:71:F1:1E:0D:88:52:01:43:07:D4:20:27:72:C7:B6:35:C8
+	 SHA256: 0F:41:1E:E6:3B:D0:60:21:C1:B7:33:C9:3C:84:F7:AD:FE:B6:DC:9D:3E:C2:5C:C7:17:C4:DF:3B:71:41:79:18
+	 Signature algorithm name: SHA1withRSA
+	 Version: 1
+
+
+*******************************************
+*******************************************
+
+
+Alias name: clientkey
+Creation date: Jul 13, 2016
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Sreenu Technologies, OU=RTP, O=Sreenu Technologies, L=Hyd, ST=TS, C=IN
+Issuer: CN=Sreenu Technologies, OU=RTP, O=Sreenu Technologies, L=Hyd, ST=TS, C=IN
+Serial number: 362fdddb
+Valid from: Wed Jul 13 22:06:18 IST 2016 until: Tue Oct 11 22:06:18 IST 2016
+Certificate fingerprints:
+	 MD5:  61:5D:C5:7F:23:E8:04:82:08:52:12:DD:75:00:9B:E3
+	 SHA1: BC:F6:D5:0C:31:96:1A:6C:18:76:8A:46:97:52:C6:F6:70:2B:2F:F6
+	 SHA256: E0:6A:04:F7:6A:E0:E0:FA:E7:02:2B:9A:0B:13:74:46:B4:4B:3B:52:EF:8D:0F:A2:A3:6D:6F:9C:F0:E2:3C:22
+	 Signature algorithm name: SHA256withRSA
+	 Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: E6 F7 B8 7B A0 04 0B 85   1F 25 8E 3C C0 63 81 E2  .........%.<.c..
+0010: 27 CE FA 16                                        '...
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+

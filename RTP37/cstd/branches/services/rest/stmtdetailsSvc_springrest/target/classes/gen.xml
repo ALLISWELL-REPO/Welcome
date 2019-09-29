@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<statementDtlsReqType xmlns="http://www.citybank.com/StatementDtls/schema/Req">
+	<ClientDetails>
+		<clientid>1245</clientid>
+		<channelid>web</channelid>
+		<reqid>7800</reqid>
+	</ClientDetails>
+	<CustomerDetails>
+		<cardnum>174785785757</cardnum>
+		<cvvnum>123</cvvnum>
+		<expdate>16-09-2018</expdate>
+		<nameoncard>Adil</nameoncard>
+	</CustomerDetails>
+	<TransCategory>
+		<DataRange />
+		<typeofcategory>All</typeofcategory>
+	</TransCategory>
+</statementDtlsReqType>

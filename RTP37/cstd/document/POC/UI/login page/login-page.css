@@ -1,0 +1,30 @@
+Download
+		.login_body{
+				background-color:yellow;
+				margin:100px;
+				margin-top:40px;
+			}
+			
+			.font_element{
+			  font-size: 25px;
+			  color: red;
+			  font-weight:bold;
+			  font-style:oblique;
+			  margin-top : 20px;
+			}
+			
+			.textbox {
+				border-top:3px solid #A9A9A9;
+			}
+			
+			.submit_button{
+				margin:10 20 0 140;
+			}
+			.welcome_text {
+				color:red;
+				font-size: 35px;
+				text-align:center;
+			}
+
+			
+			

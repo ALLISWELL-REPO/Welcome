@@ -1,0 +1,7 @@
+Quartz Trigger
+Quartz trigger is defined when the Quartz will run your above Quartz’s job?
+
+There are two types of Quartz triggers :
+
+SimpleTrigger – Allows to set start time, end time, repeat interval.
+CronTrigger – Allows Unix cron expression to specify the dates and times to run your job.

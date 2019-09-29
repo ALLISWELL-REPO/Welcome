@@ -1,0 +1,36 @@
+package com.citybank.statementdtls.dao.util;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+
+public class HibernateUtil {
+
+	private static SessionFactory sessionFactory = buildSessionFactory();
+
+	private static synchronized SessionFactory buildSessionFactory() {
+		try {
+			if (sessionFactory == null) {
+				Configuration conf = new Configuration();
+				conf.configure(HibernateUtil.class.getResource("/hibernate.cfg.xml"));
+				StandardServiceRegistryBuilder serviceRegistryBuilder = new StandardServiceRegistryBuilder();
+				serviceRegistryBuilder.applySettings(conf.getProperties());
+				ServiceRegistry registry = serviceRegistryBuilder.build();
+				sessionFactory = conf.buildSessionFactory(registry);
+			}
+			return sessionFactory;
+
+		} catch (Exception ex) {
+			System.out.println("Exception on catch block" + ex);
+			ex.printStackTrace();
+			throw new ExceptionInInitializerError(ex);
+		}
+	}
+	public static SessionFactory getSessionFactory(){
+		return sessionFactory;
+	}
+	public static void shutDown(){
+		getSessionFactory().close();
+	}
+}

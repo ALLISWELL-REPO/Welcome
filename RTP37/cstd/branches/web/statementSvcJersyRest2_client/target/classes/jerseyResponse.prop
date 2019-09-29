@@ -1,0 +1,7 @@
+test for jerseyCLient
+====================
+Request:
+url=http://localhost:8080/stmtdetailsSvc_resource_war/rest/statement/getTransaction
+MYResponse:==========
+==========================
+Response :{"StatusBlock":{"reapcode":"000","respmsg":"success"},"TransDetails":{"Transaction":[{"id":"12121","date":"21-02-1998","desc":"good","merchantname":"AAA","amount":"2000","status":"success","remark":"NA"},{"id":"12121","date":"21-02-1998","desc":"good","merchantname":"AAA","amount":"2000","status":"success","remark":"NA"},{"id":"12121","date":"21-02-1998","desc":"good","merchantname":"AAA","amount":"2000","status":"success","remark":"NA"},{"id":"12121","date":"21-02-1998","desc":"good","merchantname":"AAA","amount":"2000","status":"success","remark":"NA"}]}}
