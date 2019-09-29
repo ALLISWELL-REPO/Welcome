@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Res"
+	xmlns:tns="http://www.example.org/Res" elementFormDefault="qualified">
+<element name="orderResponse" type="tns:orderResponseType"/>
+<complexType name="orderResponseType">
+<sequence>
+	<element name="status" type="string"/>
+</sequence>
+</complexType>
+</schema>

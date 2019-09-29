@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+      
+	<bean id="blackInk" class="com.st.spring.core.beans.BlackInk">
+		<constructor-arg name="brandName" value="${blackink.brand}" />
+		<constructor-arg name="color" value="${blackink.color}" />
+	</bean> 
+	
+	<bean id="fountainPen" class="com.st.spring.core.beans.FountainPen">
+		<constructor-arg ref="blackInk" />
+	</bean> 
+	
+	<bean id="writer" class="com.st.spring.core.beans.Writer">
+		<constructor-arg ref="fountainPen" />
+	</bean>
+	
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="classpath:sample.properties" />
+	</bean>
+        
+</beans>

@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.nhs.hospitals.info</groupId>
+	<artifactId>patientinfo_aggregator_pom</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>patientinfo_Aggregator_pom</name>
+	<description>This is  Aggregator pom </description>
+	<packaging>pom</packaging>
+	<modules>
+		<module>patientinfo_intglayer</module>
+		<module>patientinfo_processlayer</module>
+		<module> patientinfo_xsdandwsdl</module>
+		<module>patientinfo_servicelayer</module>
+		<module>patientinfo_war</module>
+	</modules>
+</project>

@@ -1,0 +1,37 @@
+endPointUrl:http://localhost:8080/patientinfo_war/patientsInfo
+Request:
+============
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://www.nhs.org/PatientInfo/v1/schemas/Req">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <req:PatientInfoReq>
+         <req:PatientContext>
+            <req:requestId>123</req:requestId>
+            <req:sourceName>dfgjf</req:sourceName>
+         </req:PatientContext>
+         <req:PatientDetails>
+            <req:fname>sdf</req:fname>
+            <req:lname>kmhjl</req:lname>
+            <req:dob>12</req:dob>
+            <req:gender>m</req:gender>
+            <req:patientId>34</req:patientId>
+            <req:age>12</req:age>
+            <req:mobnum>12345</req:mobnum>
+            <req:address>hyd</req:address>
+         </req:PatientDetails>
+      </req:PatientInfoReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Response:
+===========
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+   <S:Body>
+      <ns2:PatientInfoRes xmlns="http://www.nhs.org/PatientInfo/v1/schemas/Req" xmlns:ns2="http://www.nhs.org/PatientInfo/v1/schemas/Resp">
+         <ns2:status>
+            <ns2:resCode>100</ns2:resCode>
+            <ns2:respMsg>invalid</ns2:respMsg>
+         </ns2:status>
+      </ns2:PatientInfoRes>
+   </S:Body>
+</S:Envelope>

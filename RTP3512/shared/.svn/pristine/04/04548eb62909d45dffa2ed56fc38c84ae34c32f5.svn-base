@@ -1,0 +1,3 @@
+controller.request.mapping=/helloWorld/properties/mapping/
+partial.controller.request.mapping=partial/properties/mapping/
+environment=qa

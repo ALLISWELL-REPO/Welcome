@@ -1,0 +1,7 @@
+{
+  "name":"sreenutech",
+  "dependencies":{
+    "angular":"latest",
+    "bootstrap": "latest"
+  }
+}

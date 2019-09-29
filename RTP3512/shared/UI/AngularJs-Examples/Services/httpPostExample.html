@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="ctrl">
+
+    <input type="text" ng-model="my_model"> <br><br>
+    <button ng-click="clickMe({'message':my_model})">Send</button><br><br>
+    <h1>{{result}}</h1>
+
+    <script src="lib/angular.min.js"></script>
+    <script>
+        var app = angular.module("app",[]);
+
+        app.controller("ctrl",function ($scope,my_service) {
+            $scope.clickMe = function (arg1) {
+                my_service.getData(arg1).then(function (res) {
+                   $scope.result = res;
+                });
+            };
+        });
+
+        app.service("my_service",function ($http) {
+            this.getData = function (arg1) {
+                return $http.post("http://test-routes.herokuapp.com/test/uppercase",arg1).then(function (posRes) {
+                    return posRes.data.message;
+                },function (errRes) {
+                    return errRes;
+                });
+            };
+        });
+    </script>
+</html>

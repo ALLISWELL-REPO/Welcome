@@ -1,0 +1,17 @@
+# root logger creation
+log4j.rootLogger=DEBUG,fileApp,console
+
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+
+#create pattern layout
+log4j.appender.console.layout=org.apache.log4j.PatternLayout
+#log4j.appender.consoleApps.layout.ConversionPattern=%d\t%l\t%m\n
+log4j.appender.console.layout.ConversionPattern=%d{MM-dd-yyyy}\t%l\t%m\n
+
+
+log4j.appender.fileApp=org.apache.log4j.FileAppender
+log4j.appender.fileApp.file=D://log4j//rtp3535//logs//service.log
+#create pattern layout
+log4j.appender.fileApp.layout=org.apache.log4j.PatternLayout
+#log4j.appender.consoleApps.layout.ConversionPattern=%d\t%l\t%m\n
+log4j.appender.fileApp.layout.ConversionPattern=%d{MM-dd-yyyy}\t%l\t%m\n

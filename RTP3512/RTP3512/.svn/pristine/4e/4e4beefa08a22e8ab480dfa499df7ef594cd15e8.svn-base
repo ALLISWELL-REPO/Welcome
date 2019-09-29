@@ -1,0 +1,12 @@
+#root logger Created
+log4j.rootLogger=DEBUG,ConsoleApp.FileApp
+log4j.appender.ConsoleApp=org.apache.log4j.ConsoleAppender
+log4j.appender.ConsoleApp.Target=System.out
+log4j.appender.ConsoleApp.layout=org.apache.log4j.PatternLayout
+log4j.appender.ConsoleApp.layout.ConversionPattern=%p\t%d{dd-mmm-yyyy}\t%l%m%n
+
+#File Logger Created
+log4j.appender.FileApp=org.apache.log4j.FileAppender
+log4j.appender.FileApp.File=D:\\Deepak\\proces.log
+log4j.appender.FileApp.layout=org.apache.log4j.PatternLayout
+log4j.appender.FileApp.layout.ConversionPattern=%p\t%d{dd-mmm-yyyy}\t%l%m%n

@@ -1,0 +1,13 @@
+app.config(function ($stateProvider,$urlRouterProvider) {
+    $stateProvider.state("page_one",{
+        url:"/page_one/:e_id/:e_name/:e_sal",
+        templateUrl:"templates/page_one.html",
+        controller:"page_one"
+    })
+        .state("page_two",{
+            url:"/page_two/:e_id/:e_name/:e_sal",
+            templateUrl:"templates/page_two.html",
+            controller:"page_two"
+        });
+    $urlRouterProvider.otherwise("/page_one");
+});

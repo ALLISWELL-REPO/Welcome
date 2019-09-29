@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<req:PatientInfoReq xmlns:req="http://www.nhs.org/PatientInfo/v1/schemas/Req" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nhs.org/PatientInfo/v1/schemas/Req PatientInfoSvc_Req.xsd ">
+  <req:PatientContext>
+    <req:requestId>req:requestId</req:requestId>
+    <req:sourceName>req:sourceName</req:sourceName>
+  </req:PatientContext>
+  <req:PatientDetails>
+    <req:Fname>req:Fname</req:Fname>
+    <req:lname>req:lname</req:lname>
+    <req:dob>2001-01-01</req:dob>
+    <req:gender>req:gender</req:gender>
+    <req:patient-Id>0</req:patient-Id>
+    <req:mobnum>req:mobnum</req:mobnum>
+    <req:address>req:address</req:address>
+  </req:PatientDetails>
+</req:PatientInfoReq>

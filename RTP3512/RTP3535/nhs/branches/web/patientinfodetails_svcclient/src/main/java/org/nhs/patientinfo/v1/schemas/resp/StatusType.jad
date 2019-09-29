@@ -1,0 +1,38 @@
+// Decompiled by DJ v3.5.5.77 Copyright 2003 Atanas Neshkov  Date: 8/9/2019 7:59:55 PM
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   StatusType.java
+
+package org.nhs.patientinfo.v1.schemas.resp;
+
+
+public class StatusType
+{
+
+    public StatusType()
+    {
+    }
+
+    public String getResCode()
+    {
+        return resCode;
+    }
+
+    public void setResCode(String s)
+    {
+        resCode = s;
+    }
+
+    public String getRespMsg()
+    {
+        return respMsg;
+    }
+
+    public void setRespMsg(String s)
+    {
+        respMsg = s;
+    }
+
+    protected String resCode;
+    protected String respMsg;
+}

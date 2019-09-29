@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.nhs.hospitals.info</groupId>
+  <artifactId>PatientInfo_InteLayer</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>PatientInfo_IntegrationLayer</name>
+  <description>this is the integration Layer</description>
+</project>

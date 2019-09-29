@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Req" 
+xmlns:tns="http://www.example.org/Req" elementFormDefault="qualified">
+ <element name="OrderRequest" type="tns:OrderRequestType"></element>
+ <complexType name="OrderRequestType">
+ <sequence>
+ <element name="oid" type="int"/>
+ <element name="oname" type="string"/>
+ </sequence>
+ </complexType>
+</schema>

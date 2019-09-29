@@ -1,0 +1,4 @@
+# logging
+logging.level.root=warn
+
+#logging.file=<location of the log file>

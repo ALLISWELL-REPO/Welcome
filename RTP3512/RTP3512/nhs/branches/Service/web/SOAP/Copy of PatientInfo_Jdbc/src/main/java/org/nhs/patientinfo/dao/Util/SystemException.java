@@ -1,0 +1,19 @@
+package org.nhs.patientinfo.dao.Util;
+
+public class SystemException extends Exception {
+	private String respCode;
+	private String respMsg;
+	public SystemException(String respCode, String respMsg) {
+		super();
+		this.respCode = respCode;
+		this.respMsg = respMsg;
+		
+	}
+	public String getRespCode() {
+		return respCode;
+	}
+	public String getRespMsg() {
+		return respMsg;
+	}
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.nhs.org/PatientInfo/v1/schemas/Resp"
+	xmlns:res="http://www.nhs.org/PatientInfo/v1/schemas/Resp"
+	elementFormDefault="qualified">
+	<element name="PatientInfoRes" type="res:PatientInfoResType" />
+	<complexType name="PatientInfoResType">
+		<sequence>
+			<element name="status" type="res:StatusType" />
+		</sequence>
+	</complexType>
+	<complexType name="StatusType">
+		<sequence>
+			<element name="resCode" type="string" />
+			<element name="respMsg" type="string" />
+		</sequence>
+	</complexType>
+</schema>

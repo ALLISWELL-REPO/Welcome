@@ -1,0 +1,84 @@
+package com.sreenutech.projecta;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Matchers;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+
+import com.sreenutech.projecta.beans.AReq;
+import com.sreenutech.projecta.beans.AResp;
+import com.sreenutech.projectb.B;
+import com.sreenutech.projectb.beans.BReq;
+import com.sreenutech.projectb.beans.BResp;
+import com.sreenutech.projectc.C;
+@RunWith(PowerMockRunner.class)
+@PrepareForTest({A.class,B.class,C.class})
+public class ATest {
+	//@Mock
+	B bmock;
+	//@Mock
+	//C cmock;
+
+	@Test
+	public void testM1() throws Exception {
+      //MockitoAnnotations.initMocks(this);
+		bmock = PowerMockito.mock(B.class);
+		PowerMockito.whenNew(B.class).withNoArguments().thenReturn(bmock);
+		PowerMockito.mockStatic(C.class);
+		AReq areq = new AReq();
+		areq.setOid("1121");
+		areq.setName("mobile");
+		// Mock an objct
+		// B bmock = Mockito.mock(B.class);
+		// expectation
+		PowerMockito.when(bmock.m1(Matchers.any(BReq.class))).thenReturn(
+				buildBResp());
+		PowerMockito.when(C.m1(Matchers.anyString())).thenReturn(10.00f);
+
+		// BMock bmock = new BMock();
+		A a = new A();
+		AResp aresp = a.m1(areq);
+		// verify
+		Assert.assertEquals("good", aresp.getDesc());
+		Assert.assertEquals(10.00f, aresp.getPrice(),0.0f);
+
+	}
+
+	@Test
+	public void testM1_Error_Scenarios() throws Exception {
+
+		AReq areq = new AReq();
+		areq.setOid("1121");
+		areq.setName("mobile");
+		// Mock an objct
+		B bmock = Mockito.mock(B.class);
+		PowerMockito.whenNew(B.class).withNoArguments().thenReturn(bmock);
+		// expectation
+		try {
+			Mockito.when(bmock.m1(Matchers.any(BReq.class))).thenThrow(
+					new Exception("backend eception"));
+		} catch (Exception e) {
+			Assert.assertEquals("backend eception", e.getMessage());
+			e.printStackTrace();
+		}
+
+		// BMock bmock = new BMock();
+		A a = new A();
+		AResp aresp = a.m1(areq);
+		// verify
+		 Assert.assertEquals("good", aresp.getDesc());
+
+	}
+
+	private BResp buildBResp() {
+		System.out.println("Entered into mock bresponse");
+		BResp bresp = new BResp();
+		bresp.setDesc("good");
+		return bresp;
+	}
+}

@@ -1,0 +1,16 @@
+org\nhs\patientinfo\service\client\beans\PatientInfoWebReq.class
+org\nhs\patientinfo\v1\schemas\req\PatientInfoReqType.class
+org\nhs\patientinfo\v1\schemas\req\PatientDetailsTYpe.class
+org\nhs\patientinfo\v1\schemas\res\PatientInfoResType.class
+org\nhs\patientinfo\v1\schemas\req\PatientContextType.class
+org\nhs\patientinfosrv\patientinfosrv\impl\PatientInfoSvcImplService.class
+org\nhs\patientinfo\v1\schemas\req\ObjectFactory.class
+org\nhs\patientinfo\service\client\util\PatientInfoClientConstants.class
+org\nhs\patientinfo\v1\schemas\req\package-info.class
+org\nhs\patientinfo\v1\schemas\res\package-info.class
+org\nhs\patientinfosrv\patientinfosrv\impl\PatientInfoSrv.class
+org\nhs\patientinfo\service\client\PatientInfoService.class
+org\nhs\patientinfo\service\client\beans\PatientInfoWebRes.class
+org\nhs\patientinfo\v1\schemas\res\StatusType.class
+org\nhs\patientinfo\service\client\impl\PatientInfoServiceImpl.class
+org\nhs\patientinfo\v1\schemas\res\ObjectFactory.class

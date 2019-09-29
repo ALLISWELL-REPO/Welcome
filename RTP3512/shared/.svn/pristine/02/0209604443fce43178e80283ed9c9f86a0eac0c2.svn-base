@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	
+	<my-dir></my-dir>
+	
+	
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript">
+		var app = angular.module("app",[]);
+		
+		app.directive("myDir",function(){
+			return{
+				restrict:"AEC",
+				template:"<div class='jumbotron'><b>Welcome....!</b></div>"
+			}	
+		});
+		
+		
+		
+	</script>
+</html>

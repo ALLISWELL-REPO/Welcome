@@ -1,0 +1,16 @@
+# for formatting the json response (actuator APIs)
+spring.jackson.serialization.INDENT_OUTPUT=true
+
+# enable security for actuator APIs, the user should login and have ACTUATOR role
+# default value is true
+management.security.enabled=true
+
+spring.mvc.view.prefix=/WEB-INF/jsp/
+spring.mvc.view.suffix=.jsp
+
+custom.prop=Spring Boot Custom Property
+
+spring.datasource.url=jdbc:mysql://localhost:3306/st_bank
+spring.datasource.username=miadmin
+spring.datasource.password=miadmin
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver

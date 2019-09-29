@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+      
+	<bean id="blackInk" class="com.st.spring.core.beans.BlackInk" /> 
+	
+	<bean id="fountainPen" class="com.st.spring.core.beans.FountainPen" 
+			c:ink-ref="blackInk" /> 
+	
+	<bean id="writer" class="com.st.spring.core.beans.Writer" 
+			c:pen-ref="fountainPen" />
+        
+</beans>

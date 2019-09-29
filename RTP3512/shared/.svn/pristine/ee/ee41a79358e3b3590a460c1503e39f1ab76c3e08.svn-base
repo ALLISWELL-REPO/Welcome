@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript" src="node_modules/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+	<link rel="stylesheet" href="node_modules/jasmine-core/lib/jasmine-core/jasmine.css">
+	<script type="text/javascript" src="node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+	<script type="text/javascript" src="node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
+	<script type="text/javascript" src="devEnv/calc.js"></script>
+	<script type="text/javascript" src="testEnv/calctest.js"></script>
+</html>

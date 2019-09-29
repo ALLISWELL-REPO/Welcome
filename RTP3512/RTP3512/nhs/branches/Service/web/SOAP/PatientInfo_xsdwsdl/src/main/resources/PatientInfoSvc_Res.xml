@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:PatientInfoRes xmlns:res="http://www.nhs.org/PatientInfo/v1/schemas/Res" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nhs.org/PatientInfo/v1/schemas/Res PatientInfoSvc_Res.xsd ">
+  <res:status>
+    <res:respCode>res:respCode</res:respCode>
+    <res:resMsg>res:resMsg</res:resMsg>
+  </res:status>
+</res:PatientInfoRes>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+xmlns:tns="http://www.nhs.org/PatientINfo_Srv/"
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PatientINfo_Srv" 
+  xmlns:req="http://www.nhs.org/PatientInfo/v1/schemas/Req"
+  xmlns:res="http://www.nhs.org/PatientInfo/v1/schemas/Res"
+  targetNamespace="http://www.nhs.org/PatientINfo_Srv/">
+
+  <wsdl:types>
+    <xsd:schema>
+     <xsd:import namespace="http://www.nhs.org/PatientInfo/v1/schemas/Req" schemaLocation="PatientInfoSvc_Req.xsd"/>
+     <xsd:import namespace="http://www.nhs.org/PatientInfo/v1/schemas/Res" schemaLocation="PatientInfoSvc_Res.xsd"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="createPatientRequest">
+    <wsdl:part element="req:PatientInfoReq" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="createPatientResponse">
+    <wsdl:part element="res:PatientInfoRes" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="PatientInfo_Srv">
+    <wsdl:operation name="createPatient">
+      <wsdl:input message="tns:createPatientRequest"/>
+      <wsdl:output message="tns:createPatientResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PatientINfo_Binding" type="tns:PatientInfo_Srv">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="createPatient">
+      <soap:operation soapAction="http://www.example.org/PatientINfo_Srv/NewOperation"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PatientInfo_Srv">
+    <wsdl:port name="PatientINfo_Service_Port" binding="tns:PatientINfo_Binding">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

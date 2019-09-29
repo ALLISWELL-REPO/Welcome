@@ -1,0 +1,1 @@
+@SpringBootApplication annotation should be used on the Child context configuration classes (if there are two child contexts then the annotation needs to be put on each one of them) and not on the parent or application classes.

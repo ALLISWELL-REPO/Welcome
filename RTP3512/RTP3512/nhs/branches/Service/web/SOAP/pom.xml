@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.nhs.hospitals.info</groupId>
+  <artifactId>AgrigatePom</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>AgrigatePom</name>
+  <packaging>pom</packaging>
+  <description>This is a AgrigatePom Structure  </description>
+       <modules>
+       <module>PatientInfo_IntegrationLayer</module>
+       <module>PatientInfo_xsdwsdl</module>
+       <module>PatientInfo_ServiceLayer</module>
+       <module>PatientInfo_ProcessLayer</module>
+       <module>PatientInfoSrv_war</module>
+       </modules>
+</project>

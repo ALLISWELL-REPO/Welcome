@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.nhs.org/PatientInfo/v1/schemas/Req"
+	xmlns:req="http://www.nhs.org/PatientInfo/v1/schemas/Req"
+	elementFormDefault="qualified">
+
+	<element name="PatientInfoReq" type="req:PatientInfoReqType" />
+	<complexType name="PatientInfoReqType">
+		<sequence>
+			<element name="PatientContext" type="req:PatientContextType" />
+			<element name="PatientDetails" type="req:PatientDetailsTYpe" />
+		</sequence>
+	</complexType>
+	<complexType name="PatientContextType">
+		<sequence>
+			<element name="requestId" type="string" />
+			<element name="sourceName" type="string" />
+		</sequence>
+	</complexType>
+	<complexType name="PatientDetailsTYpe">
+		<sequence>
+			<element name="Fname" type="string" />
+			<element name="lname" type="string" />
+			<element name="dob" type="date" />
+			<element name="gender" type="string" />
+			<element name="patient-Id" type="int" />
+			<element name="mobnum" type="string" />
+			<element name="address" type="string" />
+		</sequence>
+	</complexType>
+
+</schema>
