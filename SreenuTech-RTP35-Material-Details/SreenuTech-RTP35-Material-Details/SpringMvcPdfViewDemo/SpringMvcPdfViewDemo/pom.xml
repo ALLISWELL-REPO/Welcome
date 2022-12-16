@@ -13,7 +13,7 @@
 	<name>spring_app</name>
 	<description>Spring REST WEB Application</description>
 	<properties>
-		<spring.version>3.2.10.RELEASE</spring.version>
+		<spring.version>5.2.20.RELEASE</spring.version>
 		<spring.security.version>3.2.8.RELEASE</spring.security.version>
 		
 	</properties>
